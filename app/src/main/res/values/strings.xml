@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Material Issuance</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="menu">MENU</string>
+    <string name="put_away">PUTAWAY</string>
+    <string name="material_issue">MATERIAL ISSUE</string>
+    <string name="logout_menu">LOGOUT</string>
+
+    <string name="logout">Logout</string>
+    <string name="login">LogIn</string>
+
+    <string name="srf">SRF Coil No.</string>
+    <string name="srfCoil">Coil No.</string>
+    <string name="location">Location</string>
+
+    <string name="destination">Destination</string>
+    <string name="plan">Plan:</string>
+    <string name="enter_plan_number">Enter Plan Number</string>
+
+
+    <string name="issue">ISSUE</string>
+    <string name="cancel">CANCEL</string>
+
+
+    <string name="width">Width</string>
+    <string name="weight_kg">Weight-Kg</string>
+    <string name="source">Source</string>
+
+
+    <string name="please_wait">Please wait</string>
+    <string name="enter_coil_number">Please Enter Coil Number</string>
+    <string name="select_location">Please Select Location</string>
+
+    // For Logout Dialoug
+    <string name="ok">OK</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to Logout?</string>
+
+    <string-array name="addresses_array">
+        <item>Location</item>
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+        <item>Item 5</item>
+    </string-array>
+
+    <string-array name="addresses_array1">
+        <item>Destination</item>
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+        <item>Item 5</item>
+    </string-array>
+</resources>

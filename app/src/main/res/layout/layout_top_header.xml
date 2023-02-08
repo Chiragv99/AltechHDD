@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/header_bg">
+
+
+        <ImageView
+            android:id="@+id/iv_BackIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_icon"
+            android:layout_marginLeft="50dp">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_Header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:text="Header"
+            android:textColor="@color/white"
+            android:textSize="25sp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_ScanIcon"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/scanner_icon"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="50dp"
+            android:scaleType="fitCenter">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+</layout>

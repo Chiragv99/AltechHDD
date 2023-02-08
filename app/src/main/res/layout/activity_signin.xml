@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.altechhdd.viewModel.SignInViewModel" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginBottom="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@android:drawable/sym_action_email"
+                android:drawablePadding="10sp"
+                android:drawableTint="@color/edittext_bg_drwable"
+                android:hint="User ID"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dip"
+                android:paddingBottom="10dip"
+                android:inputType="text"
+                android:text="@={viewModel.email}"
+                android:textColor="@color/edittext_bg_drwable"
+                android:textColorHint="@color/edittext_bg_drwable"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+                android:drawablePadding="10sp"
+                android:drawableTint="@color/edittext_bg_drwable"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dip"
+                android:paddingBottom="10dip"
+                android:text="@={viewModel.password}"
+                android:textColor="@color/edittext_bg_drwable"
+                android:textColorHint="@color/edittext_bg_drwable"
+                android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/btn_Issue"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/edittext_bg_drwable"
+                    android:onClick="@{(view) -> viewModel.onSignInClicked()}"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dip"
+                    android:paddingBottom="10dip"
+                    android:text="@string/login"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</layout>
